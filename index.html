@@ -1,120 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KrishiSahayi Agri Officer Portal</title>
-   
-  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    .login-card {
-      box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
-    }
-  </style>
-</head>
-<body class="bg-gray-100">
-
-<!-- Background -->
-<div class="absolute inset-0 -z-10">
-  <img src="Krishipic.png"
-       class="w-full h-full object-cover brightness-105" alt="background"/>
-  <div class="absolute inset-0 bg-black/30"></div>
-</div>
-
-<!-- Main Content -->
-<div class="relative z-10 flex items-center justify-center min-h-screen p-4">
-  <div class="w-full max-w-2xl bg-white rounded-2xl p-8 login-card">
-
-    <!-- Govt. Header -->
-    <div class="text-center mb-6">
-      <h1 class="text-xl font-bold text-gray-900">Government of India</h1>
-      <h2 class="text-2xl font-bold text-green-700 mt-1">KrishiSahayi Agri Officer Portal</h2>
-      <p class="text-gray-600 mt-1">Secure Login for Authorized Officers</p>
-    </div>
-
-    <!-- ✅ Welcome Section -->
-    <div class="bg-green-50 border-l-4 border-green-600 p-4 rounded mb-6">
-      <h3 class="text-lg font-semibold text-green-800">👋 Welcome, Agricultural Officer!</h3>
-      <p class="text-sm text-gray-700 mt-1">
-        The <strong>KrishiSahayi Admin platform</strong> is your dedicated tool for efficiently 
-        managing and resolving queries from farmers. Let’s get you started on making a difference.
-      </p>
-    </div>
-
-    <!-- ✅ Login Form with Redirect -->
-    <form class="space-y-5" action="dashboard.html" method="get">
-      <!-- Officer ID -->
-      <div>
-        <label for="officerid" class="block text-sm font-medium text-gray-700">Officer ID / Employee Code</label>
-        <input id="officerid" type="text" placeholder="Enter Officer ID" required
-               class="form-input w-full px-4 py-3 rounded-lg bg-gray-100 border-gray-300 
-                      focus:border-green-600 focus:ring-green-600 text-black"/>
-      </div>
-
-      <!-- Password -->
-      <div>
-        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-        <input id="password" type="password" placeholder="Enter Password" required
-               class="form-input w-full px-4 py-3 rounded-lg bg-gray-100 border-gray-300 
-                      focus:border-green-600 focus:ring-green-600 text-black"/>
-      </div>
-
-      <!-- Login Button -->
-      <div>
-        <button type="submit" 
-          class="w-full py-3 px-4 rounded-lg shadow-sm text-base font-medium text-white 
-                 bg-green-600 hover:bg-green-700 focus:ring-2 focus:ring-offset-2 
-                 focus:ring-green-600 transition-colors">
-          Login
-        </button>
-      </div>
-    </form>
-
-    <!-- Alternative Logins -->
-    <div class="mt-6 border-t pt-6">
-      <p class="text-center text-sm font-semibold text-gray-600 mb-4">Other Login Options</p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <button class="w-full py-2 px-4 rounded-lg border border-gray-300 text-gray-700 
-                       hover:bg-gray-100 transition">Login with Mobile OTP</button>
-        <button class="w-full py-2 px-4 rounded-lg border border-gray-300 text-gray-700 
-                       hover:bg-gray-100 transition">Login with Aadhaar</button>
-        <button class="w-full py-2 px-4 rounded-lg border border-gray-300 text-gray-700 
-                       hover:bg-gray-100 transition">Login with DSC</button>
-        <button class="w-full py-2 px-4 rounded-lg border border-gray-300 text-gray-700 
-                       hover:bg-gray-100 transition">SSO / Govt. ID</button>
-      </div>
-    </div>
-
-    <!-- Forgot Password -->
-    <div class="text-center mt-6">
-      <a href="#" class="text-sm font-medium text-green-700 hover:underline">Forgot Password?</a>
-    </div>
-
-    <!-- Security Notice -->
-    <div class="mt-8 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
-      <p class="text-sm text-yellow-800">
-        ⚠️ This is a Government of India portal. Unauthorized access is punishable under the IT Act.
-      </p>
-    </div>
-
-    <!-- Footer -->
-    <footer class="text-center mt-6">
-      <p class="text-xs text-gray-500">
-        Helpline: 1800-123-4567 | Email: support@krishiSahayi.gov.in
-      </p>
-      <p class="text-xs text-gray-500 mt-1">
-        © 2025 Government of India | Ministry of Agriculture & Farmers Welfare
-      </p>
-    </footer>
-
-  </div>
-</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
