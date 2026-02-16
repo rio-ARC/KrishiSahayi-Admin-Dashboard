@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Bell,
   User,
   Search,
   MessageSquare,
@@ -119,12 +118,6 @@ const Dashboard: React.FC = () => {
           </div>
 
           <div className="flex items-center space-x-4">
-            <button className="relative p-2 rounded-md hover:bg-gray-50">
-              <Bell className="h-5 w-5 text-gray-600" />
-              <span className="absolute top-0 right-0 h-4 w-4 bg-red-500 rounded-full flex items-center justify-center">
-                <span className="text-xs text-white font-medium">{issues.filter(i => i.status === 'pending').length}</span>
-              </span>
-            </button>
             <div className="flex items-center space-x-2">
               <User className="h-5 w-5 text-green-700" />
               <span className="text-sm font-medium text-gray-700">Admin User</span>
@@ -138,7 +131,7 @@ const Dashboard: React.FC = () => {
         </div>
       </header>
 
-      <div className="flex flex-col md:flex-row flex-1 overflow-hidden">
+      <div className="flex flex-col md:flex-row flex-1 overflow-hidden gap-4">
         <aside className="w-full md:w-48 bg-gray-50 border-r border-gray-200 flex flex-col md:min-h-0">
           <nav className="flex-1 px-4 py-6 space-y-1">
             <button
