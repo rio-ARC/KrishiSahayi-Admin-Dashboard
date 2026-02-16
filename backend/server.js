@@ -10,7 +10,13 @@ import auth from './middleware/auth.js';
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+    origin: [
+        'http://localhost:5173',
+        'https://krishi-sahayi-admin-dashboard.vercel.app'
+    ],
+    credentials: true
+}));
 app.use(express.json());
 app.use(auth);
 
