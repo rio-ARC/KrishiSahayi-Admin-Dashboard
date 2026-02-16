@@ -254,8 +254,8 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/rio-ARC)
-- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/aritra-roy-choudhury/)
+- GitHub: [@rio-ARC](https://github.com/rio-ARC)
+- LinkedIn: [Aritra Roy Choudhury](https://www.linkedin.com/in/aritra-roy-choudhury/)
 
 ---
 
