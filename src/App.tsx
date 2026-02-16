@@ -7,7 +7,6 @@ import ProtectedRoute from './components/ProtectedRoute';
 import ErrorBoundary from './components/ErrorBoundary';
 import Loading from './components/Loading';
 
-// Lazy load components
 const Login = lazy(() => import('./pages/Login'));
 const Dashboard = lazy(() => import('./pages/Dashboard'));
 const Reports = lazy(() => import('./pages/Reports'));
@@ -19,25 +18,11 @@ function App() {
         <AuthProvider>
           <Router>
             <div className="App">
-              <Suspense fallback={<Loading size="lg" text="Loading page..." />}>
+              <Suspense fallback={<Loading size="lg" text="Loading..." />}>
                 <Routes>
                   <Route path="/login" element={<Login />} />
-                  <Route
-                    path="/dashboard"
-                    element={
-                      <ProtectedRoute>
-                        <Dashboard />
-                      </ProtectedRoute>
-                    }
-                  />
-                  <Route
-                    path="/reports"
-                    element={
-                      <ProtectedRoute>
-                        <Reports />
-                      </ProtectedRoute>
-                    }
-                  />
+                  <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+                  <Route path="/reports" element={<ProtectedRoute><Reports /></ProtectedRoute>} />
                   <Route path="/" element={<Navigate to="/dashboard" replace />} />
                   <Route path="*" element={<Navigate to="/dashboard" replace />} />
                 </Routes>
@@ -46,26 +31,11 @@ function App() {
                 position="top-right"
                 toastOptions={{
                   duration: 4000,
-                  style: {
-                    background: '#363636',
-                    color: '#fff',
-                  },
-                  success: {
-                    duration: 3000,
-                    iconTheme: {
-                      primary: '#10b981',
-                      secondary: '#fff',
-                    },
-                  },
-                error: {
-                  duration: 5000,
-                  iconTheme: {
-                    primary: '#ef4444',
-                    secondary: '#fff',
-                  },
-                },
-              }}
-            />
+                  style: { background: '#363636', color: '#fff' },
+                  success: { duration: 3000, iconTheme: { primary: '#10b981', secondary: '#fff' } },
+                  error: { duration: 5000, iconTheme: { primary: '#ef4444', secondary: '#fff' } },
+                }}
+              />
             </div>
           </Router>
         </AuthProvider>
