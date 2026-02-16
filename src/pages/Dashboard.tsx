@@ -14,7 +14,7 @@ import Loading from '../components/Loading';
 import type { Issue } from '../types';
 
 const Dashboard: React.FC = () => {
-  const { user, logout } = useAuth();
+  const { logout } = useAuth();
   const navigate = useNavigate();
   const [selectedIssue, setSelectedIssue] = useState<Issue | null>(null);
   const [isLoading, setIsLoading] = useState(true);

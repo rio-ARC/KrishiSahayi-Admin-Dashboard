@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Download, TrendingUp, Clock, CheckCircle, BarChart3 } from 'lucide-react';
+import { TrendingUp, Clock, CheckCircle, BarChart3 } from 'lucide-react';
 import {
   Chart as ChartJS,
   CategoryScale,
